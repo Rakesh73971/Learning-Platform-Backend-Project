@@ -1,30 +1,25 @@
-# Core Django
+asgiref==3.9.1
+certifi==2025.8.3
+cffi==1.17.1
+charset-normalizer==3.4.3
+cryptography==45.0.7
+defusedxml==0.7.1
 Django==5.2.6
-
-# WSGI server for production
-gunicorn==23.0.0
-
-# Static files handling
-whitenoise==6.10.0
-
-# Django REST framework (APIs)
-djangorestframework==3.15.2
-
-# Filtering support for DRF
-django-filter==24.3
-
-# PostgreSQL adapter (needed if you switch to Postgres)
-psycopg2-binary==2.9.9
-
-# MySQL support (needed for your DB)
-mysqlclient==2.2.4
-
-# For handling environment variables
-python-decouple==3.8
-
-# If you use CORS
-django-cors-headers==4.4.0
-
-# Authentication and JWT
-djoser==2.3.1
-djangorestframework-simplejwt==5.3.1
+django-filter==25.1
+djangorestframework==3.16.1
+djangorestframework_simplejwt==5.5.1
+djoser==2.3.3
+drf-nested-routers==0.94.2
+idna==3.10
+mysqlclient==2.2.7
+oauthlib==3.3.1
+pycparser==2.22
+PyJWT==2.10.1
+python3-openid==3.2.0
+requests==2.32.5
+requests-oauthlib==2.0.0
+social-auth-app-django==5.5.1
+social-auth-core==4.7.0
+sqlparse==0.5.3
+tzdata==2025.2
+urllib3==2.5.0
