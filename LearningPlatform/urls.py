@@ -16,10 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.http import JsonResponse
+
+def api_root(request):
+    return JsonResponse({"message": "API is running!"})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Learn/',include('Learn.urls')),
+    path('api/',include('Learn.urls')),
     path('auth/',include('djoser.urls')),
-    path('auth/',include('djoser.urls.jwt'))
+    path('auth/',include('djoser.urls.jwt')),
+    path('',include('main.urls')),  # <- This handles the root URL
+    path('',api_root),
 ]
