@@ -156,3 +156,6 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME':timedelta(days=1)
 }
+
+
+ALLOWED_HOSTS = ['learning-platform-backend-project.onrender.com']
