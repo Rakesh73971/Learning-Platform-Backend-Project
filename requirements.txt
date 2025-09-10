@@ -13,13 +13,16 @@ djangorestframework==3.15.2
 # Filtering support for DRF
 django-filter==24.3
 
-# PostgreSQL adapter (needed if you’re using Render’s Postgres DB)
+# PostgreSQL adapter (needed if you switch to Postgres)
 psycopg2-binary==2.9.9
 
-# For handling environment variables (good practice on Render)
+# MySQL support (needed for your DB)
+mysqlclient==2.2.4
+
+# For handling environment variables
 python-decouple==3.8
 
-# If you use CORS (for frontend-backend communication)
+# If you use CORS
 django-cors-headers==4.4.0
 
 # Authentication and JWT
