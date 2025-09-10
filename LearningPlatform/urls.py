@@ -26,6 +26,6 @@ urlpatterns = [
     path('api/',include('Learn.urls')),
     path('auth/',include('djoser.urls')),
     path('auth/',include('djoser.urls.jwt')),
-    path('',include('main.urls')),  # <- This handles the root URL
-    path('',api_root),
+    path('main/',include('main.urls')),
+    path('',api_root)  # <- This handles the root URL
 ]

@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django_filters',
     'djoser',
     'core',
-    'Learn'
+    'Learn',
+    'main'
 ]
 
 MIDDLEWARE = [
