@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a*sw^-bt^vme0h8*=e7v-7fyc0!363n^24dl$37qkvl^g^+opj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -157,5 +157,3 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME':timedelta(days=1)
 }
 
-
-ALLOWED_HOSTS = ['learning-platform-backend-project.onrender.com']
