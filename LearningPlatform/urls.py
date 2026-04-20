@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('Learn.urls')),
     path('auth/',include('djoser.urls')),
-    path('auth/',include('djoser.urls.jwt')),
+    path('auth/jwt/',include('djoser.urls.jwt')),
     path('main/',include('main.urls')),
-    path('',api_root)  # <- This handles the root URL
+    path('',api_root)
 ]
