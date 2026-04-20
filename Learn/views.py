@@ -82,7 +82,4 @@ class PlatformReviewViewSet(ModelViewSet):
     http_method_names = ['get','post']
 
 
-
-
-
     
